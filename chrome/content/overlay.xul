@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overlay id="authdismiss-browser-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://authdismiss/content/overlay.js"></script>
+	<script type="application/x-javascript">
+		<![CDATA[
+		
+		window.addEventListener("load", AUTOAUTH.load, false);
+		alert('test');
+		
+		]]>
+	</script>
+	<dialog id="commonDialog">
+		<stringbundleset>
+			<stringbundle id="autoauth-backup-bundle" src="chrome://autoauth-default-locale/content/locale.properties" />
+			<stringbundle id="autoauth-bundle" src="chrome://autoauth/locale/locale.properties" />
+		</stringbundleset>
+	</dialog>
+</overlay>

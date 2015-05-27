@@ -1,0 +1,2 @@
+content     authdismiss     content/
+overlay     chrome://browser/content/browser.xul  chrome://authdismiss/content/overlay.xul
